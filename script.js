@@ -64,4 +64,10 @@ for (let i = 0; i < img_paste.length; i++) {
   img_paste[i].appendChild(img); // добавляем новое изображение
 }
 
+//for (let i = 0; i < img_paste.length; i++) {
+//  const img_shd = document.createElement("img");
+//  img_shd.src = images[i].src;
+//  img_paste[i].appendChild(img_shd); // добавляем новое изображение
+//}
+
 console.log(`Добавлено ${images.length} изображений в слайд-шоу`);
