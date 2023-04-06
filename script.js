@@ -60,14 +60,23 @@ console.log(`Найдено ${images.length} изображений`);
 for (let i = 0; i < img_paste.length; i++) {
   const img = document.createElement("img");
   img.src = images[i].src;
-  img_paste[i].innerHTML = ""; // удаляем уже имеющееся изображение
+  img_paste[i].innerHTML = ""; // удаляем уже имеющееся изображение;
+  img.classList.add("right_img");
   img_paste[i].appendChild(img); // добавляем новое изображение
 }
 
-//for (let i = 0; i < img_paste.length; i++) {
-//  const img_shd = document.createElement("img");
-//  img_shd.src = images[i].src;
-//  img_paste[i].appendChild(img_shd); // добавляем новое изображение
-//}
+for (let i = 0; i < img_paste.length; i++) {
+  const img_shd = document.createElement("img");
+  img_shd.src = images[i].src;
+  img_shd.classList.add("left_img");
+  img_paste[i].appendChild(img_shd); // добавляем новое изображение
+}
+
+for (let i = 0; i < img_paste.length; i++) {
+  const img_ct = document.createElement("img");
+  img_ct.src = images[i].src;
+  img_ct.classList.add("center");
+  img_paste[i].appendChild(img_ct); // добавляем новое изображение
+}
 
 console.log(`Добавлено ${images.length} изображений в слайд-шоу`);
