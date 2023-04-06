@@ -23,7 +23,7 @@ burgerMenu.addEventListener("click", () => {
     overlayOpen.classList.toggle("open");
 });
 
-let lnk = document.querySelectorAll(".nav-link, .retail_item").forEach(n => n.addEventListener("click", () => {
+let lnk = document.querySelectorAll(".nav-link, .retail_item, .close").forEach(n => n.addEventListener("click", () => {
    burgerMenu.classList.remove("open");
    navList.classList.remove("open");
    overlayOpen.classList.remove("open");
