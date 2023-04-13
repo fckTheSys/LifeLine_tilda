@@ -1,5 +1,3 @@
-
-
 /* Указываем box sizing */
 *,
 *::before,
@@ -62,12 +60,12 @@ html {
 a {
     text-decoration: none;
     text-transform: none;
-    color: var(--main-color);
+    color: var(--main-color)!important;
 }
 
 body {
     overflow-x: hidden;
-    color: var(--main-color)!important;
+    color: var(--main-color) !important;
     font-family: 'LabGrotesque', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
@@ -75,9 +73,9 @@ body {
     background-color: var(--bg-color);
 }
 
-.descr_text>p{
+.descr_text>p {
     font-size: 1.125rem;
-    margin-bottom:0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .akc-font {
@@ -89,6 +87,7 @@ body {
 
 .small-vit {
     color: var(--grey-color);
+    font-weight: 400;
 }
 
 hr {
@@ -96,21 +95,22 @@ hr {
     border: solid 0.7px #f5f4f4;
 }
 
-#rec566675391 {
-    display:none!important;
+#rec577575245 {
+    display: none !important;
 }
 
 /*_____________________________________________*/
 
 
 :root {
-    --bg-color: #F4F4F4;
+    --bg-color: #ebf0f3;
     --pane-padding: 5px 42px;
     --round-corners-40: 40px;
     --round-corners-100: 100px;
     --round-corners-10: 10px;
     --section-color-white: white;
-    --main-color: #382B6A;
+    --main-color: #6a7179;
+    --secondary-color: #9FA5AC;
     --border-color: #00ff6a;
     --border-style: 1px solid;
     --grey-color: #C6C6C6;
@@ -124,7 +124,7 @@ hr {
 }
 
 .media_input {
-     display: block;
+    display: block;
     width: 100%;
     height: 60vh;
     min-height: 600px;
@@ -138,33 +138,6 @@ hr {
     width: 100%;
     height: 100%;
 }
-
-.orange {
-    color:#FDA531;
-}
-
-.pink {
-    color:#F7475E;
-}
-
-.red {
-    color:#E20000;
-}
-
-.violet {
-    color:#9747FF;
-}
-
-.lime {
-    color:#C3D007;
-}
-
-.green {
-    color:#85C957;
-}
-
-
-
 
 
 /*text_style*/
@@ -208,7 +181,8 @@ h5 {
 
 .large_lead {
     font-size: clamp(2rem, 5vw + 1rem, 4rem);
-    font-weight:400;
+    font-weight: 400;
+    color: ;
 }
 
 .large_lead>span {
@@ -232,7 +206,7 @@ h5 {
 }
 
 .center {
- clip-path: var(--polygon-cut-center);
+    clip-path: var(--polygon-cut-center);
 }
 
 
@@ -240,6 +214,7 @@ h5 {
     0% {
         transform: rotateY(-1deg) scaleX(.97);
     }
+
     100% {
         transform: rotateY(0deg) scaleX(1);
     }
@@ -249,6 +224,7 @@ h5 {
     0% {
         transform: rotateY(0deg) scaleX(1);
     }
+
     100% {
         transform: rotateY(1deg) scaleX(.97);
     }
@@ -303,24 +279,44 @@ h5 {
 
 
 .nav-link {
-    color: var(--main-color)!important;
-    text-decoration: none!important;
+    color: var(--main-color) !important;
+    text-decoration: none !important;
     font-size: 1rem;
     font-weight: 400;
 }
 
 
 .nav-link:hover {
-    color: #664ec5!important;
+    color: #664ec5 !important;
     transition: var(--transion-500);
 }
 
 /*hero_logo*/
 
+.sec-logo {
+    width: 100%;
+    max-width: 320px;
+    margin: 2rem 0 0rem 0;
+}
+
+.sec-logo>img {
+    padding: 2rem;
+}
+
 .logo_hero {
-    width: min(80vw, 31rem);
     height: auto;
     margin: 0.5rem;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.hero-logo>img {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.hero-logo {
+    padding: 1rem;
 }
 
 .logo>img {
@@ -374,7 +370,7 @@ h5 {
 }
 
 .m-hide {
- top:-10rem;
+    top: -7rem;
 }
 
 .menu {
@@ -412,15 +408,15 @@ h5 {
 }
 
 .leng_swtch>a {
-    font-weight:400;
-    color: var(--main-color)!important;
+    font-weight: 400;
+    color: var(--main-color) !important;
     text-decoration: none;
     display: inline-flex;
     cursor: pointer;
 }
 
 .leng_swtch>a:first-child {
-    color: var(--grey-color)!important;
+    color: var(--grey-color) !important;
 }
 
 .nav_list {
@@ -482,7 +478,7 @@ h5 {
 }
 
 .buy_btn {
-    color:var(--main-color);
+    color: var(--main-color);
     width: 7rem;
     height: 2.25rem;
     border-radius: 1rem;
@@ -496,8 +492,8 @@ h5 {
 }
 
 .buy_btn:hover {
-    color:#664ec5;
-    background-color: #f9f9f9;
+    color: white;
+    background-color: var(--secondary-color);
     transition: var(--transion-500);
 }
 
@@ -637,8 +633,8 @@ h5 {
 /*___________________________product_card_proprtys*/
 
 
-    .catalog_cards {
-    gap:2rem;
+.catalog_cards {
+    gap: 2rem;
 }
 
 .card {
@@ -676,28 +672,21 @@ h5 {
     min-height: 250px;
 }
 
-.card_img>div{
+.card_img>div {
     position: relative;
 }
 
 .img_paste>img {
+    width: auto;
+    max-height: 670px;
     position: absolute;
     inset: 0;
     margin: auto;
 }
 
-/*.img_paste>img:last-child{
-    filter: blur(20px);
-    z-index: -999;
-    opacity: 0.5;
-    transform: translateX(15px) translateY(20px);
-}*/
-
-
-
 .slide_in {
     width: 120%;
-    height:100%;
+    height: 100%;
     position: relative;
     transform: translateY(-250px);
     opacity: 0%;
@@ -714,41 +703,49 @@ h5 {
 
 
 .card_btn {
+    font-weight: 500;
     width: 15rem;
     height: 3rem;
-    color: white;
+    color: rgb(61, 61, 61);
     border: none;
-    background-color: var(--main-color);
+    background: linear-gradient(90deg, rgba(224, 226, 227, 1) 1%, rgba(189, 189, 189, 1) 16%, rgba(229, 229, 230, 1) 54%, rgba(208, 208, 208, 1) 78%);
     border-radius: var(--round-corners-10);
     transition: var(--transion-500);
 }
 
 .card_btn.int:hover {
     background-color: #FF385C;
+    background: linear-gradient(270deg, hsl(353, 100%, 67%) 0%, hsl(357, 100%, 56%) 52.4%, hsl(356, 100%, 76%) 100%);
 }
 
 .card_btn.enrgy:hover {
     background-color: #FDF74E;
+    background: linear-gradient(270deg, hsl(50, 100%, 76%) 0%, hsl(48, 100%, 90%) 44.79%, hsl(50, 100%, 81%) 100%);
 }
 
 .card_btn.bty:hover {
     background-color: #F7475E;
+    background: linear-gradient(270deg, hsl(353, 100%, 67%) 0%, hsl(0, 100%, 82%) 52.4%, hsl(353, 100%, 67%) 100%);
 }
 
 .card_btn.imm:hover {
     background-color: #DAE23B;
+    background: linear-gradient(270deg, #FBDC46 13.54%, #FFCB00 52.4%, #FBDC45 84.9%);
 }
 
 .card_btn.focus:hover {
+    background: linear-gradient(270deg, #FBB346 16.67%, #FFCB00 52.4%, #FB9145 83.85%);
     background-color: #FDA531;
 }
 
 .card_btn.bst:hover {
     background-color: #7E7E7E;
+    background: linear-gradient(270deg, #B6B6B6 2.6%, #A1A1A1 26.4%, #CACACA 52.4%, #9E9E9E 74.4%, #B6B6B6 100%);
 }
 
 .card_btn.renw:hover {
     background-color: #A268AB;
+    background: linear-gradient(270deg, #A166AA 0%, #D09CD9 52.4%, #A46AA3 100%);
 }
 
 
@@ -765,9 +762,10 @@ h5 {
 }
 
 .vita {
+    filter: grayscale(1);
     gap: 1rem;
+    opacity: 0.6;
     justify-content: start;
-    margin-top: 2rem;
 }
 
 /*_______________________________________burger*/
@@ -816,7 +814,7 @@ h5 {
 
 .close-bar>h3 {
     font-size: 1.25rem;
-} 
+}
 
 .close:hover {
     color: var(--main-color);
@@ -855,16 +853,16 @@ h5 {
     .prod_name {
         font-size: 2.5rem;
     }
-    
+
     .card_img>div {
-        position:relative;
+        position: relative;
     }
-    
+
     .slide_in {
-    opacity: 100%;
-    top:0;
-    transform: translateY(0);
-}
+        opacity: 100%;
+        top: 0;
+        transform: translateY(0);
+    }
 }
 
 
@@ -879,7 +877,7 @@ h5 {
     .img_paste {
         min-height: 400px;
     }
-    
+
     .img_paste>img {
         margin: 0 auto;
         width: auto;
@@ -896,14 +894,14 @@ h5 {
         border-radius: 1rem;
         padding: 2rem;
     }
-    
+
     .burger_menu {
         display: flex;
     }
-    
+
     .footer>h2 {
-    font-size: 1.5rem;
-}
+        font-size: 1.5rem;
+    }
 
     .card {
         grid-template-columns: repeat(auto-fit, minmax(min(19rem, 100%), 1fr));
@@ -919,16 +917,16 @@ h5 {
         border: none;
     }
 
-    .card_img>div{
+    .card_img>div {
         position: relative;
         width: 100%;
         transform: none;
     }
-    
+
     .litrage {
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-start;
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-start;
     }
 
 
@@ -947,7 +945,8 @@ h5 {
         width: 100%;
         display: grid;
         grid-auto-flow: column;
-        grid-auto-columns: minmax(28vh, max-content);
+
+        grid-auto-columns: minmax(197px, 50%);
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
         justify-content: start;

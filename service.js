@@ -24,10 +24,10 @@ burgerMenu.addEventListener("click", () => {
 });
 
 let lnk = document.querySelectorAll(".nav-link, .retail_item, .close").forEach(n => n.addEventListener("click", () => {
-   burgerMenu.classList.remove("open");
-   navList.classList.remove("open");
-   overlayOpen.classList.remove("open");
-   retailList.classList.remove("open");
+    burgerMenu.classList.remove("open");
+    navList.classList.remove("open");
+    overlayOpen.classList.remove("open");
+    retailList.classList.remove("open");
 }));
 
 
@@ -46,9 +46,7 @@ function showItems() {
         if (boxTop < triggerBottom) {
             box.classList.add('slide');
         }
-        else
-            box.classList.remove('slide');
-    });
+    })
 };
 
 let activePoints = document.querySelectorAll('.open');
@@ -60,11 +58,11 @@ function hideAll() {
     const number_el = activePoints.length
     activePoints.forEach(elements => {
         if (number_el > 0) {
-           elements.classList.remove('open');
+            elements.classList.remove('open');
         }
     });
 };
- 
+
 console.log(activePoints.length);
 
 
